@@ -48,8 +48,7 @@ export default class App extends React.Component {
     console.log(this.state);
     let tmp=this.state;
     tmp["selected"]=true;
-    // tmp["num_pairs"]=!tmp["is_hard"]?18:24;
-    tmp["num_pairs"]=!tmp["is_hard"]?18:24;
+    tmp["num_pairs"]=!tmp["is_hard"]?18:27;
     tmp["cards"]=[];
     for (let i=0;i<tmp["num_pairs"];++i){
       tmp["cards"].push({value: i,revealed: false, matched: false, });
